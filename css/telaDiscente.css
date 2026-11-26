@@ -1,0 +1,275 @@
+/* Define as cores e a fonte usadas em toda a página. */
+:root {
+	color: #23344d;
+	background: #f3f6fb;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Faz os tamanhos incluírem as bordas e o preenchimento. */
+* {
+	box-sizing: border-box;
+}
+
+/* Organiza o conteúdo e deixa o rodapé no final da página. */
+body {
+	min-height: 100vh;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+/* Cabeçalho claro com a marca e a navegação no mesmo alinhamento da galeria. */
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1.5rem;
+	padding: 1rem max(1.5rem, calc((100% - 1160px) / 2));
+	background: #fff;
+	box-shadow: 0 2px 14px rgb(35 52 77 / 7%);
+}
+
+/* Agrupa o logotipo e a identificação do evento. */
+.brand {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.8rem;
+	color: #173d75;
+	text-decoration: none;
+}
+
+.logo {
+	width: 54px;
+	height: 54px;
+	border-radius: 50%;
+	background: #fff;
+	object-fit: contain;
+}
+
+.brand strong,
+.brand small {
+	display: block;
+}
+
+.brand strong {
+	font-size: 1.05rem;
+}
+
+.brand small {
+	margin-top: 0.25rem;
+	color: #64748b;
+	font-size: 0.78rem;
+}
+
+/* Mantém os links alinhados e permite que quebrem em telas menores. */
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	flex-wrap: wrap;
+	gap: 0.4rem;
+}
+
+nav a {
+	padding: 0.65rem 0.8rem;
+	border-radius: 6px;
+	color: #52647e;
+	font-size: 0.92rem;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus-visible {
+	background: #edf4fc;
+	color: #173d75;
+}
+
+nav a.active {
+	background: #eaf1fa;
+	color: #173d75;
+}
+
+/* Centraliza as seções e apresenta cada uma como um cartão. */
+main {
+	width: min(100% - 2rem, 1000px);
+	margin: 2rem auto;
+	flex: 1;
+}
+
+section {
+	margin-bottom: 1.5rem;
+	padding: clamp(1rem, 3vw, 2rem);
+	border: 1px solid #dce5f0;
+	border-radius: 12px;
+	background: #fff;
+	box-shadow: 0 5px 18px rgb(35 52 77 / 7%);
+}
+
+h1,
+h2,
+h3 {
+	color: #173d75;
+}
+
+section h1,
+section h2 {
+	margin-top: 0;
+}
+
+p {
+	line-height: 1.6;
+}
+
+/* Agrupa e organiza os campos do formulário. */
+fieldset {
+	min-width: 0;
+	margin: 0 0 1.25rem;
+	padding: 1rem;
+	border: 1px solid #d2deed;
+	border-radius: 8px;
+}
+
+legend {
+	padding: 0 0.4rem;
+	color: #245c9e;
+	font-weight: bold;
+}
+
+label {
+	font-weight: 600;
+}
+
+input:not([type="checkbox"]):not([type="file"]),
+select,
+textarea {
+	width: 100%;
+	min-height: 42px;
+	padding: 0.65rem 0.75rem;
+	border: 1px solid #bdcbe0;
+	border-radius: 6px;
+	background: #fff;
+	color: inherit;
+	font: inherit;
+}
+
+textarea {
+	resize: vertical;
+}
+
+input[type="checkbox"] {
+	accent-color: #2468ad;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+	border-color: #2875c7;
+	outline: 3px solid rgb(40 117 199 / 18%);
+}
+
+/* Dá destaque ao botão principal do formulário. */
+button {
+	min-height: 46px;
+	padding: 0.7rem 1.2rem;
+	border: 0;
+	border-radius: 7px;
+	background: #2468ad;
+	color: #fff;
+	font: inherit;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+button:hover {
+	background: #194f89;
+}
+
+/* Permite consultar tabelas largas sem quebrar a tela. */
+table {
+	display: block;
+	width: 100%;
+	overflow-x: auto;
+	border-collapse: collapse;
+}
+
+caption {
+	padding: 0.6rem;
+	color: #52647e;
+	text-align: left;
+}
+
+th,
+td {
+	padding: 0.75rem;
+	border: 1px solid #dce5f0;
+	text-align: left;
+	vertical-align: top;
+}
+
+th {
+	background: #eaf1fa;
+	color: #173d75;
+}
+
+summary {
+	color: #245c9e;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+footer {
+	padding: 1rem;
+	background: #e8eef6;
+	color: #52647e;
+	text-align: center;
+	font-size: 0.9rem;
+}
+
+footer p {
+	margin: 0;
+}
+
+/* Ajusta margens e botões para celulares. */
+@media (max-width: 520px) {
+	header {
+		align-items: flex-start;
+		flex-direction: column;
+		gap: 0.8rem;
+		padding: 1rem 1.25rem;
+	}
+
+	nav {
+		justify-content: flex-start;
+		margin-left: -0.8rem;
+	}
+
+	main {
+		width: calc(100% - 1rem);
+		margin: 1rem auto;
+	}
+
+	fieldset {
+		padding: 0.75rem;
+	}
+
+	button {
+		width: 100%;
+	}
+}
+
+@media (max-width: 480px) {
+	nav {
+		gap: 0.1rem;
+	}
+
+	nav a {
+		padding: 0.55rem;
+		font-size: 0.82rem;
+	}
+
+	.brand small {
+		max-width: 240px;
+		font-size: 0.72rem;
+	}
+}

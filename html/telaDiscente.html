@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Área do Discente | SASI UFRRJ</title>
+	<link rel="stylesheet" href="../css/telaDiscente.css">
+</head>
+<body>
+	<header>
+	<a class="brand" href="telaGaleria.html" aria-label="SASI UFRRJ — abrir galeria">
+		<img class="logo" src="../imagens/rural_logo.png" alt="">
+		<span>
+			<strong>SASI UFRRJ</strong>
+			<small>Semana Acadêmica de Sistemas de Informação</small>
+		</span>
+	</a>
+		<nav aria-label="Navegação principal">
+		<a href="../index.html">Cadastro</a>
+		<a class="active" href="telaDiscente.html" aria-current="page">Área do discente</a>
+		<a href="telaPalestrante.html">Palestrantes</a>
+		<a href="telaOrganização.html">Organização</a>
+		<a href="telaGaleria.html">Galeria</a>
+		</nav>
+	</header>
+
+	<main>
+		<section id="inscricao">
+			<h1>Perfil Discente / Participante</h1>
+			<p>Faça sua inscrição e escolha as atividades de seu interesse.</p>
+
+			<form action="#" method="post">
+				<fieldset>
+					<legend>Dados do participante</legend>
+
+					<p>
+						<label for="nome">Nome completo</label><br>
+						<input type="text" id="nome" name="nome" autocomplete="name" required>
+					</p>
+					<p>
+						<label for="email">E-mail</label><br>
+						<input type="email" id="email" name="email" autocomplete="email" placeholder="aluno@ufrrj.br" required>
+					</p>
+					<p>
+						<label for="matricula">Matrícula</label><br>
+						<input type="text" id="matricula" name="matricula" autocomplete="off" required>
+					</p>
+					<p>
+						<label for="curso">Curso</label><br>
+						<input type="text" id="curso" name="curso" placeholder="Ex.: Sistemas de Informação" required>
+					</p>
+					<p>
+						<label for="periodo">Período</label><br>
+						<select id="periodo" name="periodo" required>
+							<option value="">Selecione</option>
+							<option>1º período</option>
+							<option>2º período</option>
+							<option>3º período</option>
+							<option>4º período</option>
+							<option>5º período</option>
+							<option>6º período</option>
+							<option>7º período</option>
+							<option>8º período</option>
+                            <option>9º período</option>
+							<option>10º período</option>
+							<option>Outro</option>
+						</select>
+					</p>
+				</fieldset>
+
+				<fieldset>
+					<legend>Atividades de interesse</legend>
+					<p>Marque as atividades que pretende acompanhar. A participação está sujeita à lotação dos espaços.</p>
+					<p><label><input type="checkbox" name="atividades" value="abertura"> Abertura e palestra: Politica</label></p>
+					<p><label><input type="checkbox" name="atividades" value="dados"> Minicurso: Primeiros passos em ciência de dados</label></p>
+					<p><label><input type="checkbox" name="atividades" value="web"> Minicurso: Desenvolvimento web</label></p>
+					<p><label><input type="checkbox" name="atividades" value="ia"> Palestra: Inteligência artificial</label></p>
+					<p><label><input type="checkbox" name="atividades" value="carreira"> Mesa-redonda: A mesa é redonda</label></p>
+				</fieldset>
+
+				<p><button type="submit">Enviar inscrição</button></p>
+			</form>
+		</section>
+
+		<section id="programacao">
+			<h2>Programação</h2>
+			<p><strong>Programação demonstrativa:</strong> Está Programação é apenas uma demonstração.</p>
+
+			<h3>Dia 1 — ICE</h3>
+			<table>
+				<caption>Atividades do primeiro dia</caption>
+				<thead>
+					<tr>
+						<th scope="col">Horário</th>
+						<th scope="col">Atividade</th>
+						<th scope="col">Local</th>
+						<th scope="col">Detalhes</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>09:00–09:30</td>
+						<td>Boas-vindas</td>
+						<td>Bebedouro do ICE</td>
+						<td>Recepção dos participantes.</td>
+					</tr>
+					<tr>
+						<td>09:30–10:30</td>
+						<td>Palestra: Politica</td>
+						<td>Auditório do ICE</td>
+						<td><details><summary>Ver detalhes</summary><p>Uma conversa sobre impactos sociais da politica no Brasil Participação de Luiz Paulo.</p></details></td>
+					</tr>
+					<tr>
+						<td>10:45–12:00</td>
+						<td>Minicurso: Primeiros passos em ciência de dados</td>
+						<td>Laboratório de Informática 1 — ICE</td>
+						<td><details><summary>Ver detalhes</summary><p>Introdução a ciência de dados. Participação de Luiz Maltar.</p></details></td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h3>Dia 2 — Pavilhão Central</h3>
+			<table>
+				<caption>Atividades do segundo dia</caption>
+				<thead>
+					<tr>
+						<th scope="col">Horário</th>
+						<th scope="col">Atividade</th>
+						<th scope="col">Local</th>
+						<th scope="col">Detalhes</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>09:00–10:00</td>
+						<td>Palestra: Inteligência artificial responsável</td>
+						<td>Auditório do P1</td>
+						<td><details><summary>Ver detalhes</summary><p>Princípios de transparência, privacidade e responsabilidade no desenvolvimento de soluções com inteligência artificial. Participação de Claver Pari Soto.</p></details></td>
+					</tr>
+					<tr>
+						<td>10:15–12:00</td>
+						<td>Minicurso: Prototipação de interfaces</td>
+						<td>Laboratório de Informática 1 — P1</td>
+						<td><details><summary>Ver detalhes</summary><p>Aprenda a criar seu primeiro site. Participação de Elton Carneiro.</p></details></td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+
+		<section id="convidados">
+			<h2>Convidados</h2>
+			<p>Biografias demonstrativas.</p>
+			<details>
+				<summary>Elton Carneiro</summary>
+				<p>Especialista em Telas.</p>
+			</details>
+			<details>
+				<summary>Luiz Maltar</summary>
+				<p>Especialista em Assembly.</p>
+			</details>
+			<details>
+				<summary>Claver Pari Soto</summary>
+				<p>Especialista em Inteligência Artificial.</p>
+			</details>
+			<details>
+				<summary>Luiz Paulo</summary>
+				<p>Especialista em Web Design.</p>
+			</details>
+		</section>
+	</main>
+
+	<footer>
+		<p>SASI UFRRJ — Instituto de Ciências Exatas (ICE)</p>
+	</footer>
+</body>
+</html>
