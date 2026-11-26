@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<!-- Configura a codificação, a responsividade e as informações da página. -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Confira os registros da Semana Acadêmica de Sistemas de Informação da UFRRJ.">
+	<title>Galeria | SASI UFRRJ</title>
+	<!-- Carrega os estilos próprios da tela de galeria. -->
+	<link rel="stylesheet" href="../css/telaGaleria.css">
+</head>
+<body>
+	<!-- Atalho de acessibilidade: permite pular direto para o conteúdo principal. -->
+	<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+	<!-- Cabeçalho com a identidade do evento e os links para as outras telas. -->
+	<header>
+		<!-- Marca do evento; o texto alternativo da imagem é vazio porque o nome já está ao lado. -->
+		<a class="brand" href="telaGaleria.html" aria-label="SASI UFRRJ — página inicial da galeria">
+			<img class="logo" src="../imagens/rural_logo.png" alt="">
+			<span>
+				<strong>SASI UFRRJ</strong>
+				<small>Semana Acadêmica de Sistemas de Informação</small>
+			</span>
+		</a>
+		<!-- Indica a tela atual com aria-current para leitores de tela. -->
+		<nav aria-label="Navegação principal">
+			<a href="../index.html">Cadastro</a>
+			<a class="active" href="telaGaleria.html" aria-current="page">Galeria</a>
+		</nav>
+	</header>
+
+	<!-- Conteúdo principal da página. -->
+	<main id="conteudo">
+		<!-- Apresentação da galeria e atalho para a coleção de fotos. -->
+		<section class="intro" aria-labelledby="titulo-galeria">
+			<p class="eyebrow">SASI UFRRJ · momentos que ficam</p>
+			<h1 id="titulo-galeria">Nossa galeria</h1>
+			<p>Ideias, encontros e descobertas: um pouco do que acontece na Semana Acadêmica de Sistemas de Informação.</p>
+			<a class="intro-link" href="#fotos">Explorar registros <span aria-hidden="true">↓</span></a>
+		</section>
+
+		<!-- Coleção de registros do evento, organizada em cartões responsivos. -->
+		<section class="gallery-section" id="fotos" aria-labelledby="titulo-registros">
+			<!-- Título e breve explicação da seção de fotos. -->
+			<div class="section-heading">
+				<div>
+					<p class="eyebrow">Registros do evento</p>
+					<h2 id="titulo-registros">Compartilhando experiências</h2>
+				</div>
+			</div>
+
+			<!-- Cada figure agrupa uma imagem, sua categoria e uma legenda. -->
+			<div class="gallery-grid">
+				<!-- Cartão em destaque: ocupa duas colunas em telas maiores. -->
+				<figure class="gallery-card gallery-card-featured">
+					<img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" alt="Estudantes conversando e sorrindo durante um encontro" loading="lazy">
+					<figcaption>
+						<span class="tag">Encontros</span>
+						<h3>Novas conexões, boas conversas</h3>
+						<p>É aqui que ideias e pessoas se encontram.</p>
+					</figcaption>
+				</figure>
+
+				<!-- Registro de uma palestra e da participação do público. -->
+				<figure class="gallery-card">
+					<img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Público acompanha uma apresentação em um auditório" loading="lazy">
+					<figcaption>
+						<span class="tag">Palestras</span>
+						<h3>Conhecimento em movimento</h3>
+						<p>Um espaço para aprender e trocar experiências.</p>
+					</figcaption>
+				</figure>
+
+				<!-- Registro da comunidade participante do evento. -->
+				<figure class="gallery-card">
+					<img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Participantes reunidos em uma atividade acadêmica" loading="lazy">
+					<figcaption>
+						<span class="tag">Comunidade</span>
+						<h3>Juntos fazemos acontecer</h3>
+						<p>A energia de quem constrói o evento.</p>
+					</figcaption>
+				</figure>
+
+				<!-- Registro de uma atividade prática de tecnologia. -->
+				<figure class="gallery-card">
+					<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Pessoa trabalhando em um computador durante uma atividade" loading="lazy">
+					<figcaption>
+						<span class="tag">Tecnologia</span>
+						<h3>Mãos à obra</h3>
+						<p>Aprender também é experimentar na prática.</p>
+					</figcaption>
+				</figure>
+
+				<!-- Registro de um momento informal entre atividades. -->
+				<figure class="gallery-card">
+					<img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Grupo de amigos reunido ao ar livre" loading="lazy">
+					<figcaption>
+						<span class="tag">Bastidores</span>
+						<h3>Entre uma atividade e outra</h3>
+						<p>Os encontros também acontecem fora do palco.</p>
+					</figcaption>
+				</figure>
+
+				<!-- Registro de uma apresentação inspiradora. -->
+				<figure class="gallery-card">
+					<img src="https://images.unsplash.com/photo-1503428593586-e225b39bddfe?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Palestrante apresentando conteúdo para uma plateia" loading="lazy">
+					<figcaption>
+						<span class="tag">Inspiração</span>
+						<h3>Histórias que inspiram</h3>
+						<p>Perspectivas diferentes para novos caminhos.</p>
+					</figcaption>
+				</figure>
+			</div>
+			<!-- Observação para lembrar que as imagens devem ser substituídas pelas fotos oficiais. -->
+		</section>
+	</main>
+
+	<!-- Rodapé com identificação institucional e link de retorno ao início da página. -->
+	<footer>
+		<p>&copy; SASI UFRRJ — Instituto de Ciências Exatas (ICE) / Departamento de Computação (DCOMP)</p>
+	</footer>
+</body>
+</html>
