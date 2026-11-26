@@ -1,7 +1,7 @@
 /* Define a paleta, a tipografia e as cores gerais da página. */
       :root {
         color-scheme: light;
-        font-family: "Segoe UI", Arial, sans-serif;
+        font-family: Arial, Helvetica, sans-serif;
         color: #1d2d45;
         background: #f2f6fc;
       }
